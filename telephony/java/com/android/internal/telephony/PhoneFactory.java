@@ -135,7 +135,7 @@ public class PhoneFactory {
                 Log.i(LOG_TAG, "Cdma Subscription set to " + cdmaSubscription);
 
                 //reads the system properties and makes commandsinterface
-                String sRILClassname = SystemProperties.get("ro.telephony.ril_class", "RIL");
+                String sRILClassname = SystemProperties.get("ro.telephony.ril_class");
                 Log.i(LOG_TAG, "RILClassname is " + sRILClassname);
 
                 if ("spica".equals(sRILClassname)) {
